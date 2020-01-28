@@ -5,5 +5,6 @@
 <h2>Vowels:<%=@analyzed_text.count_of_vowels%> </h2>
 
 <h2>Consonants:<%=@analyzed_text.count_of_consonants%> </h2>
+<%hash=@analyzed_text.most_used_letter%>
 
-<h2>Most Common Letter: <%=@analyzed_text.most_used_letter%> used <%=@analyzed_text.most_used_letter[1]%> times</h2>
+<h2>Most Common Letter: <%hash[0]=%> used <%=hash[1]%> times</h2>
